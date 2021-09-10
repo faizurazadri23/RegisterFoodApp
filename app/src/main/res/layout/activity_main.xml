@@ -21,21 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.tuyenmonkey.mkloader.MKLoader
-                android:id="@+id/progress_register"
-                android:layout_centerInParent="true"
-                android:visibility="gone"
-                app:mk_type="ThreePulse"
-                app:mk_color="@color/teal_200"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 android:text="@string/title_register"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -43,11 +34,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:orientation="vertical"
-                android:layout_below="@+id/title">
+                android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -140,9 +131,9 @@
 
                     <androidx.appcompat.widget.AppCompatAutoCompleteTextView
                         android:id="@+id/gender"
-                        android:editable="false"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:editable="false" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

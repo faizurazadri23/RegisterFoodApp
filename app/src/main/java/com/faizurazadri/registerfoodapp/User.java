@@ -13,7 +13,7 @@ public class User implements Parcelable {
     private String gender;
     private String address;
 
-    public User(){};
+    public User(){}
 
     protected User(Parcel in) {
         first_name = in.readString();

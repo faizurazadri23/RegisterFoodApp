@@ -13,7 +13,7 @@ import com.faizurazadri.registerfoodapp.databinding.ToolbarBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding mainBinding;
-    private String first_name,last_name,email,password,hp,gender, address;
+    private String first_name, last_name, email, password, hp, gender, address;
     private String list_gender[] = {"Laki-Laki", "Perempuan"};
     private ToolbarBinding toolbarBinding;
 
@@ -32,37 +32,37 @@ public class MainActivity extends AppCompatActivity {
 
 
         mainBinding.btnRegister.setOnClickListener(view -> {
-            if (mainBinding.edtFirstName.getText().toString().isEmpty()){
+            if (mainBinding.edtFirstName.getText().toString().isEmpty()) {
                 mainBinding.edtFirstName.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtFirstName.requestFocus();
                 return;
             }
 
-            if (mainBinding.edtLastName.getText().toString().isEmpty()){
+            if (mainBinding.edtLastName.getText().toString().isEmpty()) {
                 mainBinding.edtLastName.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtLastName.requestFocus();
                 return;
             }
 
-            if (mainBinding.edtEmail.getText().toString().isEmpty()){
+            if (mainBinding.edtEmail.getText().toString().isEmpty()) {
                 mainBinding.edtEmail.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtEmail.requestFocus();
                 return;
             }
 
-            if (mainBinding.edtPassword.getText().toString().isEmpty()){
+            if (mainBinding.edtPassword.getText().toString().isEmpty()) {
                 mainBinding.edtPassword.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtPassword.requestFocus();
                 return;
             }
 
-            if (mainBinding.edtHp.getText().toString().isEmpty()){
+            if (mainBinding.edtHp.getText().toString().isEmpty()) {
                 mainBinding.edtHp.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtHp.requestFocus();
                 return;
             }
 
-            if (mainBinding.edtAddress.getText().toString().isEmpty()){
+            if (mainBinding.edtAddress.getText().toString().isEmpty()) {
                 mainBinding.edtAddress.setError(getResources().getString(R.string.txt_required));
                 mainBinding.edtAddress.requestFocus();
                 return;
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void setToolbarBinding(){
+    private void setToolbarBinding() {
         Toolbar toolbar = toolbarBinding.toolbar;
         setSupportActionBar(toolbar);
         toolbarBinding.tvTitle.setText(getResources().getString(R.string.txt_register));

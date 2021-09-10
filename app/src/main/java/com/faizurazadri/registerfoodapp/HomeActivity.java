@@ -1,8 +1,8 @@
 package com.faizurazadri.registerfoodapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.faizurazadri.registerfoodapp.databinding.ActivityHomeBinding;
 
@@ -27,7 +27,6 @@ public class HomeActivity extends AppCompatActivity {
         homeBinding.hp.setText(user.getHp());
         homeBinding.gender.setText(user.getGender());
         homeBinding.address.setText(user.getAddress());
-
 
     }
 }
