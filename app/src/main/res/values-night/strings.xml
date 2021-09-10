@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_register">PENDAFTARAN PENGGUNA BARU</string>
+    <string name="txt_first_name">Nama Depan</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="txt_nohp">No Telepon</string>
+    <string name="txt_gender">Jenis Kelamin</string>
+    <string name="txt_address">Alamat</string>
+    <string name="txt_register">DAFTAR</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Kata Sandi</string>
+    <string name="txt_data">DATA PENGGUNA</string>
+    <string name="txt_home">Beranda</string>
+</resources>
